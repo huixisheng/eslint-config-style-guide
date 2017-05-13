@@ -1,0 +1,29 @@
+{
+  "name": "eslint-config-style-guide",
+  "version": "0.0.1",
+  "description": "Custom Style Guide for JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/huixisheng/eslint-config-style-guide.git"
+  },
+  "keywords": [
+    "JavaScript",
+    "Style",
+    "Guide"
+  ],
+  "author": "huixisheng@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/huixisheng/eslint-config-style-guide/issues"
+  },
+  "homepage": "https://github.com/huixisheng/eslint-config-style-guide#readme",
+  "devDependencies": {
+    "eslint-config-airbnb-base": "^11.1.3",
+    "eslint-plugin-html": "^2.0.3",
+    "eslint-plugin-import": "^2.2.0"
+  }
+}
