@@ -4,7 +4,13 @@ module.exports = {
   globals: {
     CONIFG: true,
     F: true,
-    $: true
+    $: true,
+    // fis 配置
+    fis: true,
+    __uri: true,
+    __inline: true,
+    _hmt: true,
+    Zepto: true,
   },
   parserOptions: {
     // 设置为 "script" (默认) 或 "module"（如果你的代码是 ECMAScript 模块)。
@@ -54,6 +60,9 @@ module.exports = {
     // This rule warns the usage of `console`
     // 不禁用 console
     'no-console': 'off',
+
+    // 要求使用箭头函数作为回调
+    'prefer-arrow-callback': 'off',
 
     /**
      * 要求使用点号

@@ -12,6 +12,9 @@ Custom Style Guide for JavaScript
 - https://github.com/eggjs/eslint-config-egg
 - https://github.com/ElemeFE/eslint-config-elemefe
 - https://github.com/google/eslint-config-google
+- https://github.com/vuejs/eslint-config-vue
+- https://github.com/vuejs/eslint-plugin-vue
+- http://morning.work/page/maintainable-nodejs/getting-started-with-eslint.html
 
 
 ## TODO ##

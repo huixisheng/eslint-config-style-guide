@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-style-guide",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Custom Style Guide for JavaScript",
   "main": "index.js",
   "scripts": {
