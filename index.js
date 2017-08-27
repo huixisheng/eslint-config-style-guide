@@ -10,6 +10,9 @@ module.exports = {
     __uri: true,
     __inline: true,
     _hmt: true,
+    pingpp: true,
+    _: true,
+    wx: true,
     Zepto: true,
   },
   parserOptions: {
@@ -53,6 +56,7 @@ module.exports = {
       'js': 'never',
       'vue': 'never'
     }],
+    'import/prefer-default-export': 'off',
 
     // errors
     // allow debugger during development
@@ -63,6 +67,10 @@ module.exports = {
 
     // 要求使用箭头函数作为回调
     'prefer-arrow-callback': 'off',
+
+    'prefer-template': 'off',
+    'arguments': 'off',
+    'no-underscore-dangle': 'off',
 
     /**
      * 要求使用点号
