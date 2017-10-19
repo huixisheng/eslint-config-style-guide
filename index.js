@@ -11,9 +11,9 @@ module.exports = {
     __inline: true,
     _hmt: true,
     pingpp: true,
-    _: true,
+    // _: true,
     wx: true,
-    Zepto: true,
+    // Zepto: true,
   },
   parserOptions: {
     // 设置为 "script" (默认) 或 "module"（如果你的代码是 ECMAScript 模块)。
@@ -83,6 +83,17 @@ module.exports = {
     // 只允许函数和类定义前使用
     // 该规则接受 "nofunc" 字符串作为一个选项。 "nofunc" 和 { "functions": false, "classes": true } 的效果相同。
     'no-use-before-define': ['error', { functions: false, classes: false, variables: true }],
+
+    // http://eslint.org/docs/rules/max-len
+    "max-len": ["error", 100, 2, {
+      "ignoreUrls": true,
+      "ignoreComments": true,
+      "ignoreRegExpLiterals": true,
+      "ignoreStrings": true,
+      "ignoreTemplateLiterals": true,
+    }],
+    // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-extraneous-dependencies.md
+    "import/no-extraneous-dependencies": ["error", {"devDependencies": true, "optionalDependencies": false, "peerDependencies": false}],
   }
 }
 // "off" 或 0 - 关闭规则
