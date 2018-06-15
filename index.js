@@ -1,6 +1,6 @@
 module.exports = {
   extends: ['airbnb-base'],
-  plugins: ['html'],
+  // plugins: ['html'],
   globals: {
     CONIFG: true,
     F: true,
@@ -17,12 +17,12 @@ module.exports = {
   },
   parserOptions: {
     // 设置为 "script" (默认) 或 "module"（如果你的代码是 ECMAScript 模块)。
-    sourceType: 'module'
+    sourceType: 'module',
   },
   env: {
     es6: true,
   },
-  parser: 'babel-eslint',
+  // parser: 'babel-eslint',
   rules: {
     // style
     // allow use of unary operators, ++ and --
@@ -53,8 +53,8 @@ module.exports = {
     // imports
     // don't require .vue extension when importing
     'import/extensions': ['error', 'never', {
-      'js': 'never',
-      'vue': 'never'
+      js: 'never',
+      vue: 'never',
     }],
     'import/prefer-default-export': 'off',
 
@@ -69,6 +69,7 @@ module.exports = {
     'prefer-arrow-callback': 'off',
 
     'prefer-template': 'off',
+    // eslint-disable-next-line
     'arguments': 'off',
     'no-underscore-dangle': 'off',
 
@@ -85,17 +86,21 @@ module.exports = {
     'no-use-before-define': ['error', { functions: false, classes: false, variables: true }],
 
     // http://eslint.org/docs/rules/max-len
-    "max-len": ["error", 100, 2, {
-      "ignoreUrls": true,
-      "ignoreComments": true,
-      "ignoreRegExpLiterals": true,
-      "ignoreStrings": true,
-      "ignoreTemplateLiterals": true,
+    'max-len': ['error', 100, 2, {
+      ignoreUrls: true,
+      ignoreComments: true,
+      ignoreRegExpLiterals: true,
+      ignoreStrings: true,
+      ignoreTemplateLiterals: true,
     }],
     // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-extraneous-dependencies.md
-    "import/no-extraneous-dependencies": ["error", {"devDependencies": true, "optionalDependencies": false, "peerDependencies": false}],
-  }
-}
+    'import/no-extraneous-dependencies': ['error', {
+      devDependencies: true,
+      optionalDependencies: false,
+      peerDependencies: false,
+    }],
+  },
+};
 // "off" 或 0 - 关闭规则
 // "warn" 或 1 - 开启规则，使用警告级别的错误：warn (不会导致程序退出)
 // "error" 或 2 - 开启规则，使用错误级别的错误：error (当被触发的时候，程序会退出)

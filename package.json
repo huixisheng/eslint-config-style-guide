@@ -1,9 +1,10 @@
 {
   "name": "eslint-config-style-guide",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Custom Style Guide for JavaScript",
   "main": "index.js",
   "scripts": {
+    "eslint": "./node_modules/.bin/eslint *.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -23,7 +24,11 @@
   "homepage": "https://github.com/huixisheng/eslint-config-style-guide#readme",
   "dependencies": {
     "eslint-config-airbnb-base": "^12.1.0",
-    "eslint-plugin-html": "^3.2.2",
-    "eslint-plugin-import": "^2.8.0"
+    "eslint-plugin-html": "^4.0.3",
+    "pkg-dir": "^2.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-plugin-import": "^2.12.0"
   }
 }
